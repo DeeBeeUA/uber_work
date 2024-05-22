@@ -6,6 +6,7 @@ header
 	position: relative
 	position: sticky
 	top: 0
+	z-index: 2
 	nav 
 		.menu 
 			display: flex 
@@ -39,7 +40,7 @@ nav
 	.subheader_logo_text 
 		margin-top: 6px 
 		font-size: 13px 
-		font-weight: 100 
+		font-weight: 300 
 		color: #ffffff 
 		opacity: 0.5 
 	.subheader_text 
@@ -175,6 +176,7 @@ nav
 	background: url('../img/uber_bg.png')
 	.row
 		margin-top: 32px
+		z-index: 1
 	&_item
 		position: relative
 		width: 320px
@@ -215,3 +217,36 @@ nav
 			border-radius: 100%
 			margin: 0 auto
 			cursor: pointer
+.choice
+	min-height: 896px
+	&_up
+		position: relative
+		min-height: 499px
+		background-color: #070716
+		padding-top: 57px
+		&_label
+			background-color: #ffffff
+			color: #070716
+		&_title
+			margin-top: 32px
+			color: #ffffff
+			line-height: 32px	
+		&_subtitle
+			margin-top: 19px
+			color: #ffffff
+			line-height: 21px
+		&_car
+			position: absolute
+			top: 231px
+			left: 50%
+			transform: translateX(-50%)
+	&_down
+		padding-top: 217px
+		text-align: center
+		min-height: 397px
+		background: url('../img/uber_bg.png') center center/cover no-repeat
+		&_text
+			font-size: 17px
+			line-height: 24px
+			font-weight: 500
+			color: #222222
