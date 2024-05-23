@@ -316,7 +316,9 @@ nav
 					background: url('../icons/check_mark_red.png') center center/cover no-repeat
 .world
 	min-height: 717px
+	position: relative
 	padding: 49px 0
+
 	background: url('../img/world_bg.png') center center/cover no-repeat
 	&_label
 		background-color: #ffffff
@@ -326,8 +328,10 @@ nav
 	&_subtitle
 		color: #ffffff
 	&_link
-		margin-top: 486px
-		text-align: center
+		position: absolute
+		bottom: 0px
+		left: 50%
+		transform: translateX(-50%)
 		a
 			font-size: 15px
 			font-weight: 400
