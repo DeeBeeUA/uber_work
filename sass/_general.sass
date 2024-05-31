@@ -75,7 +75,7 @@ nav
 	min-height: 800px 
 	background: url('../img/first_bg.png') center center/cover no-repeat 
 	padding: 150px 0 135px 0 
-	.promo_header 
+	&_header 
 		font-size: 60px 
 		line-height: 60px 
 		font-weight: 700 
@@ -143,38 +143,38 @@ nav
 .advantage 
 	min-height: 900px 
 	padding: 71px 0 65px 0  
-	.advantage_box 
+	&_box
 		display: flex 
-		justify-content: space-between 
+		justify-content: space-between
 		margin-top: 40px 
 		width: 485px 
-		.advantage_box_wrapper 
+		&_round
+			display: flex 
+			justify-content: center 
+			align-items: center 
+			margin: 0 auto 
+			margin-top: 20px 
+			border-radius: 100% 
+			width: 113px 
+			height: 113px 
+			background-color: #1eacc7
+		&_wrapper 
 			width: 346px 
 			min-height: 140px 
-			.advantage_box_wrapper_header 
+			&_header 
 				font-size: 17px 
 				line-height: 21px 
 				font-weight: 400 
 				color: #1eacc7 
-			.advantage_box_wrapper_text 
+			&_text 
 				font-size: 15px 
 				font-weight: 300 
 				color: #202020 
-	.advantage_box_round 
-		display: flex 
-		justify-content: center 
-		align-items: center 
-		margin: 0 auto 
-		margin-top: 20px 
-		border-radius: 100% 
-		width: 113px 
-		height: 113px 
-		background-color: #1eacc7
 .mobile
 	min-height: 864px
 	padding: 48px 0 79px 0
 	background: url('../img/mobile_bg.png') center (center / cover) no-repeat
-	.row
+	&_row
 		margin-top: 32px
 		z-index: 1
 	&_item
